@@ -2,7 +2,19 @@
 
 #include <string>
 
-struct Player
+class Player
 {
+private:
     std::string m_name;
+
+public:
+    void setName(const std::string& name)
+    {
+        m_name = name;
+    }
+
+    const std::string& getName() const
+    {
+        return m_name;
+    }
 };

@@ -11,10 +11,11 @@ namespace GameLoop
         cout << "Welcome to Text Adventure!" << endl << endl;
         cout << "What is your name?" << endl << endl;
 
-        string playerName;
-        cin >> playerName;
+        string name;
+        cin >> name;
+        player.setName(name);
 
-        cout << endl << "Hello " << playerName << endl;
+        cout << endl << "Hello " << player.getName() << endl;
     }
 
     void givePlayerOptions()
